@@ -30,4 +30,5 @@ class TaskRepository:
             task_schemas = [
                 STask.model_validate(task_model) for task_model in task_models
             ]
+            print(task_schemas)
             return task_schemas
